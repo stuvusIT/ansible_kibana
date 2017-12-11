@@ -37,7 +37,7 @@ Including an example of how to use your role (for instance, with variables passe
 
 ## License
 
-This work is licensed under a [Creative Commons Attkibanaribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
 
 ## Author Information
