@@ -1,19 +1,24 @@
 ---
-dependencies: []
-
 galaxy_info:
   author: Fritz Otlinghaus
-  description: Kibana instance.
-  company: "stuvus"
-  license: "license (BSD, MIT)"
+  description: Kibana 6 installation
+  company: stuvus (https://stuvus.uni-stuttgart.de)
+
+  license: CC-BY-SA
+
   min_ansible_version: 2.4
+
   platforms:
-  - name: Ubuntu
-    versions:
-    - precise
-    - trusty
-    - xenial
+    - name: Ubuntu
+      versions:
+        - xenial
+        - yakkety
+        - zesty
+        - artful
+
   galaxy_tags:
-    - web
-    - system
-    - monitoring
+    - Kibana
+    - elasticsearch
+    - graphana
+
+dependencies: []

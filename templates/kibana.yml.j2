@@ -61,7 +61,7 @@ elasticsearch.password: "{{ kibiana_elasticsearch_password | mandatory }}"
 #server.ssl.key: /path/to/your/server.key
 {% if kibiana_server_ssl_enabled is defined and kibiana_server_ssl_enabled %}
 server.ssl.enabled: {{ kibiana_server_ssl_enabled }}
-server.ssl.cert: "{{ kibiana_server_ssl_certificate }}"
+server.ssl.cert: "{{ kibiana_server_ssl_certificate | mandatory }}"
 server.ssl.key: "{{ kibiana_server_ssl_key | mandatory }}"
 {% endif %}
 
@@ -70,7 +70,7 @@ server.ssl.key: "{{ kibiana_server_ssl_key | mandatory }}"
 #elasticsearch.ssl.certificate: /path/to/your/client.crt
 #elasticsearch.ssl.key: /path/to/your/client.key
 {% if kibiana_elasticsearch_ssl_certificate is defined %}
-elasticsearch.ssl.certificate: "{{ kibiana_elasticsearch_ssl_certificate }}"
+elasticsearch.ssl.certificate: "{{ kibiana_elasticsearch_ssl_certificate | mandatory }}"
 elasticsearch.ssl.key: "{{ kibiana_elasticsearch_ssl_key | mandatory }}"
 {% endif %}
 
