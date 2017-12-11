@@ -14,6 +14,7 @@ For variables please see the [kibana documentation](https://www.elastic.co/guide
 
 ### Mandatory variables
 Some variables are only possible to configure together they are also listed below
+
 | Name                                    |         Required         | Default | Description                                                                                                                                                            |    |
 |:----------------------------------------|:------------------------:|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---|
 | `kibana_elasticsearch_url `             |    :heavy_check_mark:    |         | The URL of the Elasticsearch instance to use for all your queries                                                                                                      |    |
