@@ -1,0 +1,4 @@
+---
+kibana_server_port: 5601
+kibana_server_host: 'localhost'
+
