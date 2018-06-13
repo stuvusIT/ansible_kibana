@@ -112,9 +112,7 @@ elasticsearch.requestHeadersWhitelist: {{ kibana_elasticsearch_requestHeadersWhi
 # Header names and values that are sent to Elasticsearch. Any custom headers cannot be overwritten
 # by client-side headers, regardless of the elasticsearch.requestHeadersWhitelist configuration.
 #elasticsearch.customHeaders: {}
-{% if kibana_elasticsearch_customHeaders is defined %}
-elasticsearch.customHeaders: {{ kibana_elasticsearch_customHeaders }}
-{% endif %}
+elasticsearch.customHeaders: {{ kibana_elasticsearch_customHeadersMerged }}
 
 # Time in milliseconds for Elasticsearch to wait for responses from shards. Set to 0 to disable.
 #elasticsearch.shardTimeout: 0

@@ -25,6 +25,13 @@
     state: started
     enabled: yes
 
+- name: Generate basic auth b64 input string
+  set_fact:
+    basic_auth_header_input_string: "{{ kibana_elasticsearch_username }}:{{kibana_elasticsearch_password }}"
+    basic_auth_header: 
+      Authorization: "Basic {{ basic_auth_header_input_string | b64encode }}"
+    kibana_elasticsearch_customHeadersMerged: "{{ basic_auth_header | combine(kibana_elasticsearch_customHeaders | default({})) }}"
+
 - name: Copy Kibana configuration.
   template:
     src: kibana.yml.j2
