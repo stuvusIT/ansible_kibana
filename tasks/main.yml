@@ -11,7 +11,7 @@
 
 - name: Add Kibana repository
   apt_repository:
-    repo: 'deb https://packages.elastic.co/kibana/6.x/debian stable main'
+    repo: 'deb https://artifacts.elastic.co/packages/6.x/apt stable main'
     update_cache: yes
   when: ansible_os_family == 'Debian'
 
