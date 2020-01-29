@@ -1,6 +1,6 @@
 ---
 - name: Ensure dependency is installed (Ubuntu)
-  apt: 
+  apt:
     name: apt-transport-https
   when: ansible_os_family == 'Debian'
 
@@ -16,7 +16,7 @@
   when: ansible_os_family == 'Debian'
 
 - name: Install Kibana
-  package: 
+  package:
     name: kibana
 
 - name: Ensure Kibana is started and enabled at boot
